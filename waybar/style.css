@@ -1,0 +1,230 @@
+* {
+	border: none;
+	border-radius: 10px;
+    font-family: JetBrainsMono Nerd Font ;
+	font-size: 15px;
+	min-height: 10px;
+}
+
+#waybar {
+	background: transparent;
+}
+
+#waybar.hidden {
+	opacity: 0.2;
+}
+
+#workspaces {
+	margin-top: 8px;
+	margin-left: 8px;
+	background-color: #252733;
+	border-radius: 10px;
+	border: 2px solid #c78f9a;
+}
+
+#workspaces button {
+	font-weight: 400;
+	margin: 2px 2px;
+	color: #dba986;
+}
+
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #252733;
+	background: #dba986;
+	border-radius: 7px;
+}
+
+#workspaces button.active {
+	font-weight: 900;
+	color: #0a4511;
+	background-color: #83a3a0;
+	border-radius: 7px;
+}
+
+#workspaces button.active:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+	color: #0a4511;
+	background: #83a3a0;
+}
+
+#network {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #FFA5A5;
+	background-color: #313336;
+	border: 3px solid #6D9886;
+}
+
+#temperature {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #B1AFFF;
+	background-color: #313336;
+	border: 3px solid #6D9886;
+}
+
+#temperature.critical {
+	color: #eb7171;
+}
+
+#pulseaudio {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #ebbf8d;
+	background-color: #313336;
+	border: 3px solid #6D9886;
+}
+
+#battery, #battery.charging, #battery.discharging, #battery.plugged, #battery.full {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #99BBAD;
+    background-color: #313336;
+	border: 3px solid #96B6C5;
+}
+
+#battery.critical:not(.charging) {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+    color: #B5E8E0;
+    background-color: #1B3B47;
+}
+
+#backlight {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #acbd9f;
+	background-color: #313336;
+	border: 3px solid #6D9886;
+}
+
+#tray {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #aea4d0;
+	background-color: #45495c;
+	border: 2px solid #c78f9a;
+}
+
+#keyboard-state {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #c78f9a;
+	background: #252733;
+}
+
+#keyboard-state label.capslock.locked {
+	margin: 0px -10px;
+	padding: 0px 10px;
+	color: #252733;
+	background: #c78f9a;
+}
+
+#memory {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #EBD8B7;
+	background-color: #313336;
+	border: 3px solid #96B6C5;
+}
+
+#cpu {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #8CC0DE;
+	background-color: #313336;
+	border: 3px solid #96B6C5;
+}
+
+#disk {
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #FFB6B9;
+	background-color: #313336;
+	border: 3px solid #96B6C5;
+}
+
+#clock {
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	border-radius: 10px;
+	transition: none;
+	color: #A8D3DA;
+	background-color: #313336;
+	border: 3px solid #6D9886;
+}
+
+#custom-launcher {
+	font-size: 24px;
+	margin-top: 8px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 5px;
+	border-radius: 10px;
+	transition: none;
+    color: #7895B2;
+    background-color: #313336;
+	border: 3px solid #96B6C5;
+}
