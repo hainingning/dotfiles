@@ -1,7 +1,7 @@
 /*Dracula theme based on the Purple official rofi theme*/
 
 * {
-    font: "JetBrainsMono Nerd Font 22";
+    font: "JetBrainsMono NF 22";
     foreground: #48768C;
     background-color: #c2daed;
     active-background: #EFC7C2;
