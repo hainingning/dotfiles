@@ -1,16 +1,14 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","cpu","memory","disk","battery"],
-	"modules-center": ["hyprland/workspaces","tray"],
-	"modules-right": ["temperature","backlight","pulseaudio","network","clock"],
+	"modules-left": ["custom/launcher","hyprland/workspaces","cpu","memory","battery"],
+	"modules-center": ["hyprland/window"],
+	"modules-right": ["temperature","backlight","pulseaudio","network","clock","tray"],
     "hyprland/workspaces": {
-		"persistent_workspaces": {
-			"1": [], 
-			"2": [], 
-			"3": [], 
-			"4": [], 
-			"5": [], 
-			"6": [] 
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": []
 		},
 		"disable-scroll": false,
         "format": "{icon}",
@@ -18,54 +16,67 @@
 		"on-scroll-up": "hyprctl dispatch workspace -1",
 		"on-scroll-down": "hyprctl dispatch workspace +1",
         "format-icons": {
-			"1": "1",
-			"2": "2",
-			"3": "3",
-			"4": "4",
-			"5": "5",
-			"6": "6",
+			"1": "",
+			"2": "",
+			"3": "󰨞",
+			"4": "󰘅",
 			"urgent": "",
-			"default": " "
+			"default": ""
         },
         "sort-by-number": true
       },      
       "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "  {essid} | {signalStrength}%",
+        "format-wifi": "  {essid}",
         "format-ethernet": "{ipaddr}/{cidr}",
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "⚠ Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "signal: {signalStrength}%"
     },
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 70,
         // "format-critical": "{temperatureC}°C {icon}",
-        "format": " {temperatureC}°C",
+        "format": "{icon} {temperatureC}",
+		"format-icons": ["", "", ""],
 		"tooltip": false
     },
+	"hyprland/window": {
+		"format": "{title}",
+		"rewrite": {
+			"(.*)(?! 和另外 \\d+ 个页面) - 用户配置 1 - Microsoft​ Edge": "  -> $1",
+			"(.*) 和另外 \\d+ 个页面 - 用户配置 1 - Microsoft​ Edge": "  -> $1",
+
+			"(.*) - code_config - Visual Studio Code": "󰨞  -> $1",
+
+			"(.*)@ning: (.*)": "$1 -> $2",
+			"(.*)@ning:(.*)": "root -> $2"
+		},
+		"separate-outputs": true
+	},
 	"tray":{
 		"icon-size":18,
 		"spacing": 10
 	},
     "clock": {
 		"interval":	60,
-        "format": " {:%H:%M | %m/%d}",
+        "format": " {:%H:%M}",
+        "format-alt": " {:%m/%d}",
     },
     "cpu": {
-        "format": " {usage}%",
+        "format": " {usage}",
         "interval": 2,
         "tooltip": true
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon} {volume}%  {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format": "{icon} {volume} {format_source}",
+        "format-bluetooth": "{volume} {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": "✖ {format_source}",
-        "format-source": " {volume}%",
+        "format-source": " {volume}",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
@@ -79,7 +90,7 @@
         "on-click": "pavucontrol"
     },
 	"backlight": {
-		"format": "☀ {percent}%",
+		"format": "☀ {percent}",
 		"tooltip": false
 	},
     "memory": {
@@ -91,11 +102,12 @@
 	"battery": {
 		"interval": 5,
 		"format": "discharging >_",
-		"format-charging": "  {capacity}% | {power:0.1f}W",
-		"format-discharging": "{icon} {capacity}% | {power:0.1f}W",
-		"format-plugged": "plugged :]",
-		"format-full": "full :)",
-		"format-icons": [" ", " ", " ", " ", " "],
+		"format-charging": "  {capacity}",
+		"format-discharging": "{icon} {capacity}",
+		"format-plugged": "󱟨 plugged :]",
+		"format-full": "󱟢 full :)",
+		"format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+		"tooltip-format": "power: {power:0.1f}W",
 		"states": {
 			"warning": 30,
 			"critical": 15
@@ -108,6 +120,7 @@
     },
     "custom/launcher":{
         "format": " ",
-		"tooltip": false
+		"tooltip": false,
+		"on-click": "alacritty -e btop"
     }
 }

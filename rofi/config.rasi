@@ -1,7 +1,7 @@
 /*Dracula theme based on the Purple official rofi theme*/
 
 * {
-    font: "JetBrainsMono NF 22";
+    font: "JetBrainsMono Nerd Font 17";
     foreground: #48768C;
     background-color: #c2daed;
     active-background: #EFC7C2;
@@ -22,12 +22,12 @@ configuration {
 
 #window {
     background-color: @background-color;
-    border:           5;
-    border-radius:    15;
+    border:           4;
+    border-radius:    16;
     border-color:     @bordercolor;
-    padding:          10;
-	width: 800px;
-	height: 500px;
+    padding:        10px 10px 0px 10px;
+	width: 700px;
+	height: 450px;
 }
 #mainbox {
     border:  0;
@@ -50,9 +50,9 @@ configuration {
     padding:      2px 0px 0px ;
 }
 #element {
-	border-radius: 15;
+	border-radius: 17;
     border:  0;
-    padding: 10px 50px;
+    padding: 7px 50px;
 }
 #element.normal.normal {
     background-color: @background-color;
@@ -127,7 +127,8 @@ configuration {
 }
 #textbox-prompt-colon {
     expand:     false;
-    str:        "  ";
+    font: "JetBrainsMono Nerd Font 20";
+    str:        "  ";
     margin:     0px 0.3em 0em 0em ;
     text-color: @foreground;
 }
