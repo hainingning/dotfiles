@@ -9,23 +9,11 @@ blinking = "Always"
 shape = "Underline"
 
 [font]
-size = 15.7
-
-[font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Bold"
-
-[font.bold_italic]
-family = "JetBrainsMono Nerd Font"
-style = "Bold Italic"
-
-[font.italic]
-family = "JetBrainsMono Nerd Font"
-style = "Italic"
+size = 17.5
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
-style = "Semibold"
+family = "霞鹜文楷等宽"
+style = "Bold"
 
 [window]
 opacity = 0.85

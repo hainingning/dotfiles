@@ -1,8 +1,23 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/launcher","hyprland/workspaces","cpu","memory","battery"],
-	"modules-center": ["hyprland/window"],
-	"modules-right": ["temperature","backlight","pulseaudio","network","clock","tray"],
+	"modules-left": [
+		"custom/launcher",
+		"hyprland/workspaces",
+		"cpu",
+		"memory",
+		"battery"
+	],
+	"modules-center": [
+		"hyprland/window"
+	],
+	"modules-right": [
+		"temperature",
+		"backlight",
+		"pulseaudio",
+		"network",
+		"clock",
+		"tray"
+	],
     "hyprland/workspaces": {
 		"persistent-workspaces": {
 			"1": [],
@@ -16,7 +31,7 @@
 		"on-scroll-up": "hyprctl dispatch workspace -1",
 		"on-scroll-down": "hyprctl dispatch workspace +1",
         "format-icons": {
-			"1": "",
+			"1": "",
 			"2": "",
 			"3": "󰨞",
 			"4": "󰘅",
@@ -27,7 +42,7 @@
       },      
       "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "  {essid}",
+        "format-wifi": "  {essid}",
         "format-ethernet": "{ipaddr}/{cidr}",
         "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
@@ -46,8 +61,8 @@
 	"hyprland/window": {
 		"format": "{title}",
 		"rewrite": {
-			"(.*)(?! 和另外 \\d+ 个页面) - 用户配置 1 - Microsoft​ Edge": "  -> $1",
-			"(.*) 和另外 \\d+ 个页面 - 用户配置 1 - Microsoft​ Edge": "  -> $1",
+			"(.*)(?! 和另外 \\d+ 个页面) - 用户配置 1 - Microsoft​ Edge": "$1",
+			"(.*) 和另外 \\d+ 个页面 - 用户配置 1 - Microsoft​ Edge": "$1",
 
 			"(.*) - code_config - Visual Studio Code": "󰨞  -> $1",
 
@@ -60,13 +75,21 @@
 		"icon-size":18,
 		"spacing": 10
 	},
+	"keyboard-state": {
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "  ",
+            "unlocked": "  "
+        }
+	},
     "clock": {
 		"interval":	60,
-        "format": " {:%H:%M}",
-        "format-alt": " {:%m/%d}",
+        "format": "  {:%H:%M}",
+        "format-alt": "  {:%m/%d}",
     },
     "cpu": {
-        "format": " {usage}",
+        "format": "  {usage}",
         "interval": 2,
         "tooltip": true
     },
@@ -75,7 +98,7 @@
         "format": "{icon} {volume} {format_source}",
         "format-bluetooth": "{volume} {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "✖ {format_source}",
+        "format-muted": "󰝟 {format_source}",
         "format-source": " {volume}",
         "format-source-muted": "",
         "format-icons": {
@@ -85,12 +108,12 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": ["", ""]
         },
         "on-click": "pavucontrol"
     },
 	"backlight": {
-		"format": "☀ {percent}",
+		"format": " {percent}",
 		"tooltip": false
 	},
     "memory": {
@@ -121,6 +144,6 @@
     "custom/launcher":{
         "format": " ",
 		"tooltip": false,
-		"on-click": "alacritty -e btop"
+		"on-click": "alacritty --title=btop -e btop"
     }
 }

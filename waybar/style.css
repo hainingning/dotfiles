@@ -1,10 +1,9 @@
 * {
 	padding: 0px 0px;
 	border: none;
-	border-radius: 13px;
-    font-family: JetBrainsMono Nerd Font;
-	font-weight: 400;
-	font-size: 16.5px;
+	border-radius: 14px;
+	font-weight: bold;
+	font-size: 18px;
 	min-height: 0;
 }
 
@@ -23,7 +22,7 @@
 	margin-bottom: 4px;
 	margin-left: 8px;
 	background-color: #252733;
-	border-radius: 13px;
+	border-radius: 14px;
 	border: 2px solid #c78f9a;
 }
 
@@ -39,7 +38,7 @@
 	text-shadow: inherit;
 	color: #252733;
 	background: #dba986;
-	border-radius: 9px;
+	border-radius: 10px;
 }
 
 #workspaces button.active {
@@ -47,7 +46,7 @@
 	font-weight: 900;
 	color: #0a4511;
 	background-color: #83a3a0;
-	border-radius: 9px;
+	border-radius: 10px;
 }
 
 #workspaces button.active:hover {
@@ -64,7 +63,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
 	color: #FFA5A5;
 	background-color: #292e39;
@@ -77,7 +76,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
 	color: #B1AFFF;
 	background-color: #292e39;
@@ -94,7 +93,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
 	color: #ebbf8d;
 	background-color: #292e39;
@@ -108,7 +107,7 @@
 	margin-right: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
 	color: #99BBAD;
     background-color: #292e39;
@@ -122,7 +121,7 @@
 	margin-right: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
     color: #B5E8E0;
     background-color: #1B3B47;
@@ -134,8 +133,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	padding-bottom: 3px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
 	color: #acbd9f;
 	background-color: #292e39;
@@ -149,7 +147,7 @@
 	margin-right: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
 	color: #aea4d0;
 	background-color: #45495c;
@@ -157,13 +155,12 @@
 }
 
 #window {
-	font-size: 17.5px;
-	font-weight: 600;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-top: 3px;
-	margin-bottom: 4px;
-	color: #a8adb5;
+	font-family: 霞鹜臻楷;
+	font-size: 25px;
+	font-weight: 300;
+	margin: 0px 10px 0px 10px;
+	/*color: #a8adb5;*/
+	color: #E2BFB3;
 }
 
 #keyboard-state {
@@ -172,7 +169,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
 	color: #c78f9a;
 	background: #252733;
@@ -191,7 +188,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
 	color: #EBD8B7;
 	background-color: #292e39;
@@ -205,7 +202,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
 	color: #8CC0DE;
 	background-color: #292e39;
@@ -218,7 +215,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
 	color: #FFB6B9;
 	background-color: #292e39;
@@ -231,7 +228,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
 	color: #A8D3DA;
 	background-color: #292e39;
@@ -245,7 +242,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 5px;
-	border-radius: 13px;
+	border-radius: 14px;
 	transition: none;
     color: #7895B2;
     background-color: #292e39;

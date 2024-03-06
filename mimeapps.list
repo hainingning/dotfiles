@@ -1,0 +1,27 @@
+[Default Applications]
+text/html=microsoft-edge.desktop
+x-scheme-handler/http=microsoft-edge.desktop
+x-scheme-handler/https=microsoft-edge.desktop
+x-scheme-handler/about=microsoft-edge.desktop
+x-scheme-handler/unknown=microsoft-edge.desktop
+application/pdf=microsoft-edge.desktop
+application/json=code-oss.desktop
+image/jpeg=org.nomacs.ImageLounge.desktop
+image/png=org.nomacs.ImageLounge.desktop
+image/gif=org.nomacs.ImageLounge.desktop
+image/bmp=org.nomacs.ImageLounge.desktop
+image/x-bmp=org.nomacs.ImageLounge.desktop
+image/x-ico=org.nomacs.ImageLounge.desktop
+image/tiff=org.nomacs.ImageLounge.desktop
+image/x-tiff=org.nomacs.ImageLounge.desktop
+image/webp=org.nomacs.ImageLounge.desktop
+application/wps-office.docx=wps-office-wps.desktop
+application/wps-office.doc=wps-office-wps.desktop
+application/xml=code.desktop
+
+[Added Associations]
+application/octet-stream=microsoft-edge.desktop;
+application/wps-office.docx=wps-office-wps.desktop;
+application/wps-office.doc=wps-office-wps.desktop;
+application/xml=code.desktop;
+image/png=org.nomacs.ImageLounge.desktop;
