@@ -43,7 +43,6 @@
 
 #workspaces button.active {
 	padding: 0px 6px 0px 4px;
-	font-weight: 900;
 	color: #0a4511;
 	background-color: #83a3a0;
 	border-radius: 10px;
@@ -157,7 +156,7 @@
 #window {
 	font-family: 霞鹜臻楷;
 	font-size: 25px;
-	font-weight: 300;
+	font-weight: 400;
 	margin: 0px 10px 0px 10px;
 	/*color: #a8adb5;*/
 	color: #E2BFB3;

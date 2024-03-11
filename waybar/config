@@ -4,15 +4,13 @@
 		"custom/launcher",
 		"hyprland/workspaces",
 		"cpu",
-		"memory",
-		"battery"
+		"memory"
 	],
 	"modules-center": [
 		"hyprland/window"
 	],
 	"modules-right": [
 		"temperature",
-		"backlight",
 		"pulseaudio",
 		"network",
 		"clock",
@@ -63,6 +61,8 @@
 		"rewrite": {
 			"(.*)(?! 和另外 \\d+ 个页面) - 用户配置 1 - Microsoft​ Edge": "$1",
 			"(.*) 和另外 \\d+ 个页面 - 用户配置 1 - Microsoft​ Edge": "$1",
+
+			"(.*) — Mozilla Firefox": "$1",	
 
 			"(.*) - code_config - Visual Studio Code": "󰨞  -> $1",
 
